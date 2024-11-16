@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate House</title>
+</head>
+<body>
+    <h1>Welcome to the Chocolate House Management System</h1>
+    <ul>
+        <li><a href="/view_seasonal_flavors">View Seasonal Flavors</a></li>
+        <li><a href="/view_ingredient_inventory">View Ingredient Inventory</a></li>
+        <li><a href="/view_customer_suggestions">View Customer Suggestions</a></li>
+    </ul>
+    <h2>Add New Data:</h2>
+    <form action="/add_seasonal_flavor" method="post">
+        <label>Flavor Name:</label>
+        <input type="text" name="flavor_name" required>
+        <label>Available Till (YYYY-MM-DD):</label>
+        <input type="text" name="available_till" required>
+        <button type="submit">Add Seasonal Flavor</button>
+    </form>
+    <form action="/add_ingredient" method="post">
+        <label>Ingredient Name:</label>
+        <input type="text" name="ingredient_name" required>
+        <label>Quantity:</label>
+        <input type="number" name="quantity" required>
+        <button type="submit">Add Ingredient</button>
+    </form>
+    <form action="/add_customer_suggestion" method="post">
+        <label>Customer Name:</label>
+        <input type="text" name="customer_name" required>
+        <label>Suggestion:</label>
+        <input type="text" name="suggestion" required>
+        <label>Allergy Concern:</label>
+        <input type="text" name="allergy_concern">
+        <button type="submit">Add Suggestion</button>
+    </form>
+</body>
+</html>
